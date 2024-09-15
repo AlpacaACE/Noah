@@ -14,11 +14,12 @@ from torch import optim
 from torch.nn.parallel import DistributedDataParallel
 from torch.optim.lr_scheduler import CosineAnnealingLR
 from torch.utils.data import DataLoader, DistributedSampler
-from transformers import AutoTokenizer, AutoModel
+from transformers import AutoTokenizer, AutoModel, AutoModelForCausalLM
 from model.model import Transformer
 from model.LMConfig import LMConfig
 from model.dataset import SFTDataset
 
+#os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 warnings.filterwarnings('ignore')
 
 def Logger(content):
@@ -99,7 +100,7 @@ def count_parameters(model):
     return sum(p.numel() for p in model.parameters() if p.requires_grad)
 
 def init_model(lm_config):
-    tokenizer = AutoTokenizer.from_pretrained('./tokenizer_mistral')
+    tokenizer = AutoTokenizer.from_pretrained('./Noah')
     model_from = 1  # 1从权重，2用transformers
 
     if model_from == 1:
@@ -116,7 +117,8 @@ def init_model(lm_config):
         model.load_state_dict(state_dict, strict=False)
     else:
         # 暂时不可用
-        model = AutoModel.from_pretrained('./minimind', trust_remote_code=True)
+        #model = AutoModel.from_pretrained('./Noah', trust_remote_code=True)
+        model = AutoModelForCausalLM.from_pretrained('./Noah', trust_remote_code=True)
 
     Logger(f'LLM总参数量：{count_parameters(model) / 1e6:.3f} 百万')
     model = model.to(device)
@@ -139,7 +141,7 @@ if __name__ == "__main__":
     lm_config = LMConfig()
     max_seq_len = lm_config.max_seq_len
     save_steps = lm_config.save_steps
-    out_dir = 'output/full_sft_moe'
+    out_dir = 'output/full_sft_test'
     epochs = 5
     gradient_accumulation_steps = 1
     batch_size = 1

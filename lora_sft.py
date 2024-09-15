@@ -110,7 +110,7 @@ if __name__ == "__main__":
     # config
     lm_config = LMConfig()
     max_seq_len = lm_config.max_seq_len
-    out_dir = 'output/lora_sft_dense'
+    out_dir = 'output/lora_sft_test'
     epochs = 5
     gradient_accumulation_steps = 1
     batch_size = 4
@@ -132,7 +132,7 @@ if __name__ == "__main__":
     )
 
     model, tokenizer = init_model()
-
+    
     # init dataloader
     df = pd.read_csv('./dataset/sft_data_one-turn.csv')
     #df = pd.read_csv('./dataset/sft_data_multi-turn.csv')
