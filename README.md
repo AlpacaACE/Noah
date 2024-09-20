@@ -1,5 +1,5 @@
 # Noah
 
-|Model|PT|SFT|DPO|
-|:-:|:-:|:-:|:-:|
-|Noah-0.04B||||
+|Model|PT|SFT|
+|:-:|:-:|:-:|
+|Noah-0.04B|||
