@@ -12,8 +12,23 @@ def data_clean():
         for idx, obj in enumerate(reader):
             try:
                 content = obj.get('text', '')
+                # 直接丢弃
                 if len(content) > 512:
                     continue
+
+                # 截取512
+                # if len(content) > 512:
+                #     # 找到512字符以内的部分
+                #     truncated_content = content[:512]
+                #     # 找到最后一个句号的位置
+                #     last_period_index = truncated_content.rfind('。')
+                #     if last_period_index != -1:
+                #         # 截取最后一个句号之前的内容
+                #         content = truncated_content[:last_period_index + 1]
+                #     else:
+                #         # 如果没有句号，直接截取512字符
+                #         content = truncated_content
+                        
                 text_id = tokenizer(f'{bos_token}{content}{eos_token}').data['input_ids']
                 doc_ids += text_id
                 data_available += 1
