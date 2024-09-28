@@ -4,6 +4,7 @@
 |:-:|:-:|:-:|:-:|
 |Noah-0.04B|[Github](https://github.com/KnowAIHub/Noah/tree/main/model/tokenizer_6400)|[HuggingFace](https://huggingface.co/wangrongsheng/Noah-0.04B-Base)|[HuggingFace](https://huggingface.co/wangrongsheng/Noah-0.04B-Chat)|
 |Noah-0.1B|[Github](https://github.com/KnowAIHub/Noah/tree/main/model/tokenizer_6400)|[ModelScope](https://modelscope.cn/models/wangrongsheng/Noah-0.1B-Chat/files)|[ModelScope](https://modelscope.cn/models/wangrongsheng/Noah-0.1B-Chat/)|
+|Noah-MoE-0.09B|[Github](https://github.com/KnowAIHub/Noah/tree/main/model/tokenizer_6400)|[ModelScope](https://modelscope.cn/models/wangrongsheng/Noah-MoE-0.09B-Chat/files)|[ModelScope](https://modelscope.cn/models/wangrongsheng/Noah-MoE-0.09B-Chat/)|
 
 # References
 
