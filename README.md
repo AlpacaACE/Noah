@@ -16,3 +16,8 @@
 6. https://github.com/Tongjilibo/build_MiniLLM_from_scratch
 7. https://github.com/jzhang38/TinyLlama
 8. https://github.com/AI-Study-Han/Zero-Chatgpt
+9. https://github.com/loubnabnl/nanotron-smol-cluster ([使用Cosmopedia训练cosmo-1b](https://huggingface.co/blog/zh/cosmopedia))
+10. https://github.com/charent/Phi2-mini-Chinese
+11. https://github.com/allenai/OLMo
+12. https://github.com/keeeeenw/MicroLlama
+13. https://github.com/Chinese-Tiny-LLM/Chinese-Tiny-LLM
