@@ -1,3 +1,5 @@
+![](../assets/image.jpeg)
+
 # Noah
 
 |Model|Tokenizer|PT|SFT|
