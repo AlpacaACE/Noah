@@ -1,4 +1,4 @@
-![](../assets/image.jpeg)
+![](assets/image.jpeg)
 
 # Noah
 
