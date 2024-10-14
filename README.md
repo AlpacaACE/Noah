@@ -24,3 +24,4 @@
 12. https://github.com/keeeeenw/MicroLlama
 13. https://github.com/Chinese-Tiny-LLM/Chinese-Tiny-LLM
 14. https://github.com/leeguandong/MiniLLaMA3
+15. https://github.com/Pints-AI/1.5-Pints
