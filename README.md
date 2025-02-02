@@ -27,3 +27,4 @@
 15. https://github.com/Pints-AI/1.5-Pints
 16. https://github.com/zhanshijinwat/Steel-LLM
 17. https://github.com/RUC-GSAI/YuLan-Mini
+18. https://github.com/Om-Alve/smolGPT
